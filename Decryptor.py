@@ -56,3 +56,9 @@ class Decryptor:
 
         print(f"\nDecrypted Message {msg_plaintext}")
 
+        #  write out decrypted file
+        if input("Save to a file? (Y/N)?").lower().strip() == "y":
+            out_name = input("Save file as: ").lower().strip()
+            file_out = open(out_name, "w")
+            file_out.write(msg_plaintext)
+            file_out.close()
