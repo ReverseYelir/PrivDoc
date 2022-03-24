@@ -14,8 +14,8 @@
     In the [HKEY_CLASSES_ROOT\Applications\python.exe\shell\open\command] registry, under default, the "%*" is missing at the end of @="\"C:\\Python25\\python.exe\" \"%1\"
 
 **Usage**
-- encryption: PrivDoc.py -enc absolute_path_file_to_encrypt
-- decryption: PrivDoc.py -dec absolute_path_file_to_decrypt
+- encryption: PrivDoc.py -enc absolute_path
+- decryption: PrivDoc.py -dec absolute_path
 
 **External Libraries**
 - PBKDF2 - https://pypi.org/project/pbkdf2/
