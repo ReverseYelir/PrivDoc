@@ -23,12 +23,13 @@ Usage:
     -enc: Flag notifying you want to ENCRYPT the file
     -dec: Flag notifying you want to DECRYPT the file
 '''
-import sys
+import sys, os
 
 import Encryptor
 import Decryptor
 
 def run_encryption(args):
+    print(args)
     # encryption
     absolute_path = args[1]
     enc = Encryptor.Encryptor(absolute_path)
